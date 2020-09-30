@@ -1,2 +1,2 @@
 # projetos Spring
-Exercícios e projetos desenvolvidos no Bootcamp Generation | IDE STS
+Exercícios e aplicações desenvolvidas no Bootcamp Generation | IDE Spring Tool Suite
