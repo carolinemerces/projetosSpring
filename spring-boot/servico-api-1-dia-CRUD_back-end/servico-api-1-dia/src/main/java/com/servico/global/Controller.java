@@ -40,12 +40,18 @@ public class Controller {
 		return model;
 	}
 	
-	//método DELETE com retorn
+	//método DELETE com return
 	@DeleteMapping("/servicos/{id}")//DELETE - deleta uma linha na tabela
 	public String remover(@PathVariable Long id) {
 		repository.deleteById(id);
 		return "sucesso";
 	}
+	
+	
+	
+	
+	
+	
 	
 	/*método DELETE void
 	//@DeleteMapping("/servicos/{id}")//DELETE - deleta uma linha na tabela
