@@ -40,7 +40,7 @@ public class PostagemController {
 	
 	//FindByTitulo - selecionar
 	@GetMapping("/titulo/{titulo}")//necessáio /titulo(subcaminho com o atributo titulo entre chaves), para não dar duplicidade com o método anterior (id)
-	public ResponseEntity<List<Postagem>> getByTitulo(@PathVariable String titulo){
+	public ResponseEntity<List<Postagem>> findByDescricaoTitulo(@PathVariable String titulo){
 		return ResponseEntity.ok(repository.getByTituloContainingIgnoreCase(titulo));
 	} //devolve uma lista com tudo que conter o que for digitado (o método que criamos na postagemrepository) // o responseentity.ok(retorna como status 200)
 	
