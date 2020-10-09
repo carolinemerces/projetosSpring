@@ -26,7 +26,7 @@ public class UsuarioController {
 	@Autowired
 	public UsuarioRepository repository;
 	
-	//MÉTODPS CRUD
+	//MÉTODOS CRUD
 	//GET
 	//ALL
 	@GetMapping
