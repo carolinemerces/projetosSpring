@@ -12,7 +12,13 @@
 					"name": "GET",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic bWVyY2VzOnRlc3Rl",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8080/postagens",
 							"protocol": "http",
@@ -303,6 +309,72 @@
 							]
 						},
 						"description": "http://localhost:8080/tema/3"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "POST -  CADASTRAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Caroline das Mercês\",\r\n    \"usuario\":\"merces\",\r\n    \"senha\":\"teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						},
+						"description": "http://localhost:8080/usuarios/cadastrar"
+					},
+					"response": []
+				},
+				{
+					"name": "POST - LOGAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\":\"merces\",\r\n    \"senha\":\"teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/logar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"logar"
+							]
+						},
+						"description": "http://localhost:8080/usuarios/logar"
 					},
 					"response": []
 				}
